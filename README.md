@@ -4,7 +4,7 @@ A free, serverless daily job digest built on Google Apps Script. Every morning a
 
 **Full setup instructions → [SETUP_GUIDE.md](./SETUP_GUIDE.md)**
 
-**How it works and why I built it → [Medium article](YOUR_MEDIUM_ARTICLE_LINK_HERE)**
+**How it works and why I built it → [Medium article](https://medium.com/@anantgoyal2000/how-to-automate-your-job-search-for-free-using-google-scripts-f5175760be26)**
 
 ---
 
