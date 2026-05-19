@@ -1,0 +1,191 @@
+% ================================================================
+% ANANT GOYAL — MASTER LATEX RESUME TEMPLATE
+% ================================================================
+% This is your base template. The automation generates versions
+% of this file tailored to each job and saves them to Drive.
+%
+% To compile manually:
+%   1. Upload to Overleaf (overleaf.com) — free, instant PDF
+%   2. Or install TeX Live locally and run: pdflatex resume.tex
+% ================================================================
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% ── Custom commands ──────────────────────────────────────────────
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% ════════════════════════════════════════════════════════════════
+\begin{document}
+
+% ── HEADING ─────────────────────────────────────────────────────
+\begin{center}
+    \textbf{\Huge \scshape Anant Goyal} \\ \vspace{1pt}
+    \small 217-693-9836 $|$
+    \href{mailto:anantgoyal2000@gmail.com}{\underline{anantgoyal2000@gmail.com}} $|$
+    \href{https://linkedin.com/in/anant-goyal1}{\underline{linkedin.com/in/anant-goyal1}} $|$
+    \href{https://github.com/anant248}{\underline{github.com/anant248}} $|$
+    \href{https://anantgoyal.com}{\underline{anantgoyal.com}}
+\end{center}
+
+% ── EDUCATION ───────────────────────────────────────────────────
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Illinois Urbana-Champaign}{Champaign, IL}
+      {Master of Engineering in Computer Engineering}{Expected: December 2026}
+      \resumeItemListStart
+        \resumeItem{Relevant Courses: Distributed Systems, Real-World Algorithms, Communication Networks, Artificial Intelligence, Computer Vision}
+      \resumeItemListEnd
+    \resumeSubheading
+      {The University of British Columbia}{Vancouver, BC}
+      {Bachelor of Applied Science in Computer Engineering}{2018 -- 2023}
+  \resumeSubHeadingListEnd
+
+% ── SKILLS ──────────────────────────────────────────────────────
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, C\#, TypeScript, JavaScript, SQL, Bash} \\
+     \textbf{Technologies}{: React, Angular, Spring, Hadoop, Spark, Next.js, Node.js, Electron, Jenkins, Snyk, Autosys, Jira, Git, Amazon ECS, Selenium Grid}
+    }}
+ \end{itemize}
+
+% ── EXPERIENCE ──────────────────────────────────────────────────
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{July 2023 -- August 2025}
+      {Citi}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Reduced trade creation time by 90\% for high-volume institutional users by shipping a bulk trade feature for a money market fund trading application in Java and Angular}
+        \resumeItem{Engineered financial controls: duplicate trade detection, blind re-key for trades over \$5M, maximum trade amount of \$10B, and multiple approval flows for trades over \$10M to ensure compliance and risk reduction}
+        \resumeItem{Remediated 20+ critical vulnerabilities identified via BlackDuck \& Snyk scans, bolstering application security}
+        \resumeItem{Achieved 25\% reduction in QA cycle time by spearheading unit test infrastructure, surpassing 80\% code coverage}
+        \resumeItem{Automated 400+ regression tests and distributed using Selenium Grid reducing execution time by 62\%, deployed tests as a microservice on Amazon ECS}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{May 2022 -- Aug 2022}
+      {Picotera Electronics}{Richmond, BC}
+      \resumeItemListStart
+        \resumeItem{Increased device uptime by 10\% and improved emergency alerts functionality by developing firmware in C for a smart communication device}
+        \resumeItem{Delivered custom Android app features (app-whitelisting, kiosk mode) using the Android Management API to manage device policies for over 50 devices}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Test Engineering Intern}{January 2021 -- August 2021}
+      {NETGEAR}{Richmond, BC}
+      \resumeItemListStart
+        \resumeItem{Executed 10+ manual and automated tests weekly on various 3G/LTE routers across multiple product lines}
+        \resumeItem{Led automation development for a newly released mobile hotspot by writing first 3 Python-based test scripts}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Test Automation Development Intern}{May 2020 -- December 2020}
+      {IBM}{Ottawa, ON}
+      \resumeItemListStart
+        \resumeItem{Automated 30+ regression test cases in JavaScript using Selenium reducing manual testing load by 40\%}
+        \resumeItem{Improved i18n validation coverage by 100\% across localized environments by developing a CSV parser tool to enable test execution across 20+ supported languages}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% ── PROJECTS ────────────────────────────────────────────────────
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Distributed File System \& Stream Processor} $|$ \emph{Java, Hadoop, Apache Spark}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and built a fault-tolerant distributed file system and stream processing engine, achieving 10,000 tuples/sec throughput and 70ms file re-replication latency under failures across 10 nodes}
+            \resumeItem{Implemented leader-based coordination with consistent hashing and quorum-based reads/writes to ensure strong consistency and automatic rebalancing under varying workloads}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{InterPrep} $|$ \emph{Next.js, Google MediaPipe, TypeScript}}{}
+          \resumeItemListStart
+            \resumeItem{Built a real-time mock interview platform using Next.js that analyzes non-verbal communication during behavioral interviews, providing actionable feedback on eye contact and facial expressions}
+            \resumeItem{Implemented computer vision pipelines using Google MediaPipe to compute Eye Contact and Expression Scores from live webcam streams, enabling immediate, quantitative user feedback}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{NeuroMarketing} $|$ \emph{Python, MATLAB, Recommendation Systems}}{}
+          \resumeItemListStart
+            \resumeItem{Building a neuro-adaptive ad recommendation system that integrates EEG, facial recognition and emotional modeling to personalize ad content in real time}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Electric Rainbow} $|$ \emph{Python, Node.js, Electron, WebSockets, Raspberry Pi}}{}
+          \resumeItemListStart
+            \resumeItem{Created a fully functional client-server application to visually display live music from an electric guitar with 3ms data latency via TCP WebSockets}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{EEG Machine Learning Model} $|$ \emph{Python, NumPy, TensorFlow, Scikit-learn}}{}
+          \resumeItemListStart
+            \resumeItem{Developed EEG-based worker fatigue prediction models (ANN, CNN, Random Forest, Logistic Regression); refined input features and cross-validation techniques to overcome initial overfitting}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+\end{document}
